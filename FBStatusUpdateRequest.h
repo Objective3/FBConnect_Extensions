@@ -6,7 +6,7 @@
 //  Copyright 2009 Objective 3. All rights reserved.
 //
 
-#import "FBConnect.h"
+#import "FBConnect/FBConnect.h"
 #import "FBPermissionRequest.h"
 
 @protocol FBStatusUpdateRequestDelegate;

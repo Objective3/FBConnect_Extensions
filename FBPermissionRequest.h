@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FBConnect.h"
+#import "FBConnect/FBConnect.h"
 
 @protocol FBPermissionRequestDelegate;
 
