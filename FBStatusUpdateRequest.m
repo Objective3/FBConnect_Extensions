@@ -23,7 +23,7 @@ static NSString* kFacebookUpdateStatusPermissionName = @"status_update";
 static NSString* kFacebookUpdateStatusApiCallName = @"facebook.Users.setStatus";
 
 + (FBStatusUpdateRequest*)requestStatusUpdate:(NSString*)statusString withSession:(FBSession*)session delegate:(id<FBStatusUpdateRequestDelegate>)delegate {
-	FBStatusUpdateRequest* statusUpdateRequest = [[FBStatusUpdateRequest alloc] initWithSession:session];
+	FBStatusUpdateRequest* statusUpdateRequest = [[[FBStatusUpdateRequest alloc] initWithSession:session] autorelease];
 	statusUpdateRequest.delegate = delegate;
 	[statusUpdateRequest updateStatus:statusString];
 	
@@ -31,7 +31,7 @@ static NSString* kFacebookUpdateStatusApiCallName = @"facebook.Users.setStatus";
 }
 
 + (FBStatusUpdateRequest*)requestStatusUpdate:(NSString*)statusString delegate:(id<FBStatusUpdateRequestDelegate>)delegate {
-	FBStatusUpdateRequest* statusUpdateRequest = [[FBStatusUpdateRequest alloc] init];
+	FBStatusUpdateRequest* statusUpdateRequest = [[[FBStatusUpdateRequest alloc] init] autorelease];
 	statusUpdateRequest.delegate = delegate;
 	[statusUpdateRequest updateStatus:statusString];
 	
