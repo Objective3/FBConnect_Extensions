@@ -3,7 +3,7 @@
 //  Thumbprint
 //
 //  Created by Blake Watters on 5/13/09.
-//  Copyright 2009 Objective 3. All rights reserved.
+//  Copyright 2009 Two Toasters. All rights reserved.
 //
 
 #import "FBConnect/FBConnect.h"
